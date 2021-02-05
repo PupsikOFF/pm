@@ -1,138 +1,132 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
-<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
-
-<head>
-	<!-- Заголовок страницы в браузере -->
-	<title>Профмастер. Сеть сервисных центров.</title>
-	<!-- Подключаем CSS -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="img/logo.png">
-	<link href="css/animate.css" rel="stylesheet">
-	<link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
-
-
-	<!-- Кодировка страницы -->
-	<meta charset="UTF-8">
-	<!-- Адаптив -->
-	<meta name="viewport" content="width=device-width">
-</head>
-<!-- Отображаемое тело страницы -->
-
-<body>
-	<div class="wrapper">
-		<!-- Контент -->
-		<header class="header">
-			<div class='container'>
-				<div class="header__body">
-					<a href="index.html" class="header__logo">
-						<img src="img/logo.png" alt="" />
-					</a>
-					<div class="header__burger">
-						<span></span>
-					</div>
-					<nav class="header__menu">
-						<ul class="header__list">
-							<li>
-								<a href="index.html" class="header__link">Главная</a>
-							</li>
-							<li>
-								<a href="service.html" class="header__link dropdown">Сервисный центр</a>
-								<ul class="help__dropdown" aria-label="submenu" role="menu">
-									<li><a href="" role="menuitem">Ремонт Apple</a></li>
-									<li><a href="" role="menuitem">Ремонт мобильных и планшетов</a></li>
-									<li><a href="" role="menuitem">Ремонт компьютеров и ноутбуков</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="" class="header__link dropdown">Дом быта</a>
-								<ul class="help__dropdown" aria-label="submenu" role="menu">
-									<li><a href="" role="menuitem">Часовая мастерская</a></li>
-									<li><a href="" role="menuitem">Обувная мастерская</a></li>
-									<li><a href="" role="menuitem">Фотосалон</a></li>
-									<li><a href="" role="menuitem">Изготовление ключей</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="" class="header__link">Полезное</a>
-							</li>
-							<li>
-								<a href="" class="header__link">Контакты</a>
-							</li>
-							<li>
-								<div class="header__info">
-									<div class="info__block">
-										<div class="info__text">
-											<a href="tel:+ 7 (915) 137 69 99"><img src="img/services/phone.png" alt="" />
-												+ 7 (915) 137 69 99</a>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>ПрофМастерю Сервисный центр</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class='container'>
+					<div class="header__body">
+						<a href="index.html" class="header__logo">
+							<img src="img/logo.png" alt="" />
+						</a>
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li>
+									<a href="index.html" class="header__link">Главная</a>
+								</li>
+								<li>
+									<a href="service.html" class="header__link dropdown">Сервисный центр</a>
+									<ul class="help__dropdown" aria-label="submenu" role="menu">
+										<li><a href="" role="menuitem">Ремонт Apple</a></li>
+										<li><a href="" role="menuitem">Ремонт мобильных и планшетов</a></li>
+										<li><a href="" role="menuitem">Ремонт компьютеров и ноутбуков</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="" class="header__link dropdown">Дом быта</a>
+									<ul class="help__dropdown" aria-label="submenu" role="menu">
+										<li><a href="" role="menuitem">Часовая мастерская</a></li>
+										<li><a href="" role="menuitem">Обувная мастерская</a></li>
+										<li><a href="" role="menuitem">Фотосалон</a></li>
+										<li><a href="" role="menuitem">Изготовление ключей</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="" class="header__link">Полезное</a>
+								</li>
+								<li>
+									<a href="" class="header__link">Контакты</a>
+								</li>
+								<li>
+									<div class="header__info">
+										<div class="info__block">
+											<div class="info__text">
+												<a href="tel:+ 7 (915) 137 69 99"><img src="img/services/phone.png" alt="" />
+													+ 7 (915) 137 69 99</a>
+											</div>
 										</div>
 									</div>
-								</div>
-							</li>
-						</ul>
-					</nav>
+								</li>
+							</ul>
+						</nav>
+					</div>
 				</div>
-			</div>
-		</header>
-		<div class="service__block">
-			<div class="fullscreen" id="home">
-				<div class="fullscreen__image">
-					<img src="img/bg.jpg" alt="">
-				</div>
-			</div>
+			</header>
 	
-			<div class='service__container'>
-				<div class="service__title title">Сервисный центр</div>
-				<div class="service__body">
-					<div class="service__row">
-						<div class="service__column">
-							<div class="service__item">
-								<div class="service__subtitle">Ремонт Apple</div>
-								<div class="service__image">
-									<img src="img/widgets/services/apple2.png" alt="" />
-								</div>
-								<div class="service__text">От бесплатной диагностики до сложного ремонта.
-								</div>
-								<a href="" class="service__btn"> Подробнее</a>
-							</div>
+			<h1 class="title">Сервисный центр</h1>
+			<div class="image-slider swiper-container">
+				<!-- Слайдер -->
+				<div class="image-slider__wrapper swiper-wrapper">
+					<div class="image-slider__slide swiper-slide">
+						<div class="image-slider__image">
+							<img src="img/work/01.jpeg" alt="Картинка">
 						</div>
-						<div class="service__column">
-							<div class="service__item">
-								<div class="service__subtitle">Ремонт Apple</div>
-								<div class="service__image">
-									<img src="img/widgets/services/apple2.png" alt="" />
-								</div>
-								<div class="service__text">От бесплатной диагностики до сложного ремонта.
-								</div>
-								<a href="" class="service__btn"> Подробнее</a>
-							</div>
+					</div>
+					<div class="image-slider__slide swiper-slide">
+						<div class="image-slider__image">
+							<img src="img/work/03.jpeg" alt="Картинка">
 						</div>
-						<div class="service__column">
-							<div class="service__item">
-								<div class="service__subtitle">Ремонт Apple</div>
-								<div class="service__image">
-									<img src="img/widgets/services/apple2.png" alt="" />
-								</div>
-								<div class="service__text">От бесплатной диагностики до сложного ремонта.
-								</div>
-								<a href="" class="service__btn"> Подробнее</a>
-							</div>
-						</div>
-						<div class="service__column">
-							<div class="service__item">
-								<div class="service__subtitle">Ремонт Apple</div>
-								<div class="service__image">
-									<img src="img/widgets/services/apple2.png" alt="" />
-								</div>
-								<div class="service__text">От бесплатной диагностики до сложного ремонта.
-								</div>
-								<a href="" class="service__btn"> Подробнее</a>
-							</div>
+					</div>
+					<div class="image-slider__slide swiper-slide">
+						<div class="image-slider__image">
+							<img src="img/work/clock.jpeg" alt="Картинка">
 						</div>
 					</div>
 				</div>
+				<!-- Добавляем, если нам нужна пагинация -->
+				<div class="swiper-pagination"></div>
+		</div>
+		<div class="vertical">
+			<div class='container'>
+				<div class="vertical__title title"> Сервисный центр</div>
+				<div class="vertical__body">
+					<div class="vertical__row">
+						<div class="vertical__column vertical__column_1">
+							<div class="vertical__item">
+								<div class="vertical__subtitle">Ремонт iPhone<img src="img/widgets/services/apple2.png" alt="" /></div>
+								<div class="vertical__label">Выберите модель для просмотра подробной информации</div>
+								<div class="vertical__text"></div>
+								<a href="" class="vertical__btn">Подробнее</a>
+							</div>
+						</div>
+						<div class="vertical__column vertical__column_2">
+							<div class="vertical__item">
+								<div class="vertical__subtitle">Ремонт iPad<img src="img/widgets/services/apple2.png" alt="" /></div>
+								<div class="vertical__label">Выберите модель для просмотра подробной информации</div>
+								<div class="vertical__text">
+								</div>
+								<a href="" class="vertical__btn">Подробнее</a>
+							</div>
+						</div>
+						<div class="vertical__column vertical__column_3">
+							<div class="vertical__item">
+								<div class="vertical__subtitle">Ремонт iMac<img src="img/widgets/services/apple2.png" alt="" /></div>
+								<div class="vertical__label">Выберите модель для просмотра подробной информации</div>
+								<div class="vertical__text"></div>
+								<a href="" class="vertical__btn">Подробнее</a>
+							</div>
+						</div>
+						<div class="vertical__column vertical__column_4">
+							<div class="vertical__item">
+								<div class="vertical__subtitle">Ремонт MacBook<img src="img/widgets/services/apple2.png" alt="" /></div>
+								<div class="vertical__label">Выберите модель для просмотра подробной информации</div>
+								<div class="vertical__text"></div>
+								<a href="" class="vertical__btn">Подробнее</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
 			</div>
 		</div>
 		<footer class="footer">
@@ -140,8 +134,7 @@
 				<div class="footer__row">
 					<div class="footer__text">
 						<p>© 2020 ПрофМастер Сервис. Ремонт мобильной и компьютерной техники в Одинцово.</p>
-						<p>Копирование и использование информации и материалов сайта запрещено. Сайт носит
-							информационный
+						<p>Копирование и использование информации и материалов сайта запрещено. Сайт носит информационный
 							характер и ни при каких условиях не является офертой.</p>
 						<p>Товарные знаки, торговые марки, фирменные обозначения используемые на сайте, принадлежат
 							производителю и не являются собственностью сервисного центра.</p>
@@ -149,11 +142,9 @@
 				</div>
 			</div>
 		</footer>
-	</div>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/swiper.jquery.min.js" type="text/javascript"></script>
-</body>
 
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>

@@ -78,27 +78,6 @@ h6 {
 html,
 body {
 	height: 100%;
-	background: -moz-linear-gradient(
-		45deg,
-		rgba(30, 87, 153, 1) 0%,
-		rgba(141, 181, 214, 1) 28%,
-		rgba(32, 124, 202, 1) 68%,
-		rgba(125, 185, 232, 1) 100%
-	);
-	background: -webkit-linear-gradient(
-		45deg,
-		rgba(30, 87, 153, 1) 0%,
-		rgba(141, 181, 214, 1) 28%,
-		rgba(32, 124, 202, 1) 68%,
-		rgba(125, 185, 232, 1) 100%
-	);
-	background: linear-gradient(
-		45deg,
-		rgba(30, 87, 153, 1) 0%,
-		rgba(141, 181, 214, 1) 28%,
-		rgba(32, 124, 202, 1) 68%,
-		rgba(125, 185, 232, 1) 100%
-	);
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	color: #fff;
 	font-size: 16px;
@@ -554,6 +533,12 @@ h2 {
 	width: 100%;
 	top: 0;
 	left: 0;
+	z-index: 1;
+}
+#bg-6 {
+	width: 100%;
+	height: 100%;
+	margin: 0;
 }
 
 
@@ -561,69 +546,26 @@ h2 {
 .moments {
 	display: flex;
 	background-color: #00000000;
+	z-index: 3;
 }
 .moments__container {
 	margin-top: -600px;
 }
 .moments__items {
 	display: flex;
-	margin: 0px -20px;
-}
-.moments__item {
-	flex: 0 1 20%;
-	padding: 0px 20px;
-	text-align: center;
-}
-
-.moments__image {
-	width: 250px;
-	height: 200px;
-	border-width: 50px;
-	display: inline-block;
-	position: relative;
-	overflow: hidden;
-	margin: 0px -10px 10px 0px;
-}
-.moments__image img {
-	position: absolute;
-	background: rgba(0, 0, 0, 0.479);
-	padding: 15px;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	object-fit: cover;
-}
-.moments__text {
-	background: rgba(0, 0, 0, 0.322);
-	width: 250px;
-	color: #fff;
-	font-size: 25px;
-	font-weight: 700;
-	line-height: 35px;
-	margin-bottom: 15px;
-}
-
-.moments__item._active .moments__image {
-	transform: scale(1);
-}
-.moments__item._active .moments__text {
-	transform: translate(0px, 0px);
-	opacity: 1;
 }
 
 .flip-card {
-	background-color: transparent;
 	width: 300px;
 	height: 300px;
-	perspective: 1000px;
+	perspective: 8000px;
 	flex: 0 1 20%;
 	padding: 0px 20px;
 	text-align: center;
  }
 
  .flip-card img {
-	 padding: 15px;
+	padding: 15px;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -636,9 +578,9 @@ h2 {
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	transition: transform 0.6s;
+	transition: transform 1s;
 	transform-style: preserve-3d;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
  }
  
  .flip-card:hover .flip-card-inner {
@@ -654,7 +596,7 @@ h2 {
  }
  
  .flip-card-front {
-	color: black;
+	color: rgb(255, 255, 255);
  }
  
  .flip-card-back {
@@ -662,12 +604,15 @@ h2 {
 	transform: rotateY(180deg);
  }
 
+ .flip-card-back p{
+	 color: #fff;
+ }
+
  .card__text{
 	 position: relative;
 	 bottom: 65%;
-	 left: 5%;
 	 color: #fff;
-	 justify-content: center;
+	 left: 10%;
 	 font-size: 25px;
  }
 
@@ -687,8 +632,8 @@ h2 {
 	text-decoration: none;
 	position: relative;
 	display: inline-flex;
-	top: 30px;
-	left: 50%;
+	top: 60px;
+	left: 43%;
 }
 .button:before,
 .button:after {
@@ -771,7 +716,7 @@ h2 {
 	background-color: rgba(151, 151, 151, 0.486);
 	flex: 1 1 auto;
 	z-index: 3;
-	margin-top: -130px;
+	margin-top: -30px;
 }
 .why__container {
 	max-width: 1400px;
@@ -1134,6 +1079,30 @@ h2 {
 	}
 }
 
+
+.imac__block {
+	display: flex;
+}
+.imac__body {
+	flex: 0 1 50%;
+	border: 3px solid;
+	margin: 0 10px;
+	background-color: rgba(59, 59, 59, 0);
+
+}
+.imac__item {
+	text-align: center;
+}
+.imac__title {
+	text-align: center;
+	font-size: 40px;
+}
+
+.imac__image img:nth-child(0){
+	position: relative;
+	top: 50px;
+}
+
 .popup {
 	position: fixed;
 	width: 100%;
@@ -1209,11 +1178,16 @@ h2 {
 	max-width: 50%;
 	vertical-align: top;
 }
+.ipad-popup__image img {
+	min-width: 30%;
+	position: relative;
+	left: 35%;
+}
 
 .popup__close {
 	position: absolute;
 	right: 10px;
-	top: 10px;
+	top: 14px;
 	font-size: 20px;
 	color: #000;
 	text-decoration: none;
@@ -1249,17 +1223,18 @@ h2 {
 	border-right: 3px solid #000000;
 	border-bottom: 3px solid #000000;
 	font-family: "Lucida Grande", sans-serif;
-	margin: 35px;
+	margin: 35px 0;
 }
 .table_price caption {
 	background: #000000;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	padding: 10px;
+	padding: 7px;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 	color: white;
 	font-family: "Roboto Slab", serif;
 	font-style: normal;
+	text-transform: none;
 	font-size: 22px;
 	text-align: center;
 	margin: 0;
@@ -1269,7 +1244,7 @@ h2 {
 	padding: 5px;
 }
 .table_price th {
-	text-align: left;
+	text-align: center;
 	font-size: 14px;
 }
 .table_price tr:nth-child(2n) {

@@ -533,7 +533,6 @@ h2 {
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 1;
 }
 #bg-6 {
 	width: 100%;
@@ -1271,4 +1270,40 @@ h2 {
 	bottom: 8px;
 	left: 25px;
 	position: fixed;
+}
+
+
+/* Mobile page*/
+
+
+.mobile {
+	display: flex;
+	flex: 1 1 auto;
+
+}
+.mobile__content {
+
+	position: relative;
+	top: 100px;
+}
+.mobile__title {
+	text-align: center;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+	font-size: 20px;
+}
+.mobile__block {
+	margin-top: 25px;
+	display: flex;
+}
+.mobile__body {
+	flex: 0 1 50%;
+	border: 3px solid;
+	margin: 0 10px;
+	background-color: rgba(59, 59, 59, 0);
+
+}
+.mobile__item {
+}
+.mobile__image img {
+	
 }

@@ -469,6 +469,7 @@ h2 {
 .about h2, .about h1 {
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
   color: #fff;
+  padding-bottom: 50px;
 }
 
 .footer {
@@ -504,6 +505,7 @@ h2 {
           flex: 1 1 auto;
   text-align: center;
   position: relative;
+  padding-top: 50px;
 }
 
 .moments__items {
@@ -551,6 +553,14 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .button {
+    max-width: 150px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 150px;
+    position: absolute;
+    left: -150px;
   }
 }
 
@@ -796,7 +806,7 @@ h2 {
 .why__image img {
   position: relative;
   background: rgba(105, 105, 105, 0.479);
-  padding: 15px;
+  padding: 10px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -807,7 +817,7 @@ h2 {
 }
 
 .why__tytle {
-  font-size: 60px;
+  font-size: 50px;
   color: #6d6c6e;
   text-align: center;
 }
@@ -815,6 +825,7 @@ h2 {
 .why__list {
   font-size: 20px;
   margin: 10px 0;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 1182px) {
@@ -849,7 +860,15 @@ h2 {
   .why__image img {
     max-width: none;
     position: relative;
-    left: -25%;
+    left: -30%;
+  }
+  .why__tytle {
+    font-size: 45px;
+    padding-bottom: 25px;
+  }
+  .why__list {
+    font-size: 18px;
+    line-height: 1.5;
   }
 }
 

@@ -797,7 +797,6 @@ h2 {
   position: relative;
   background: rgba(105, 105, 105, 0.479);
   padding: 15px;
-  left: 20;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -847,10 +846,10 @@ h2 {
         flex-wrap: wrap;
     text-align: center;
   }
-  .why__image {
+  .why__image img {
     max-width: none;
     position: relative;
-    left: 3%;
+    left: -25%;
   }
 }
 

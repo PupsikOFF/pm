@@ -66,5 +66,3 @@ for (let index = 0; index < tabs.length; index++) {
 }
 
 
-
-

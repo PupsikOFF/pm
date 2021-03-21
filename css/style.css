@@ -490,7 +490,6 @@ h2 {
   font-family: Pattaya;
   font-weight: 400;
   color: #c9c2af;
-  text-decoration: underline;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -682,6 +681,7 @@ h2 {
   color: #fff;
   left: 5%;
   font-size: 25px;
+  text-decoration: underline;
 }
 
 .card__text-back {
